@@ -1,0 +1,96 @@
+<html>
+<head><title>iNFOFLIX</title></center><img src="completelogo-removebg-preview.png"  width="100" height="50"><br>
+<link rel="icon" type="iNFOFLIX-removebg-preview.png">
+    <style>
+        body {
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-size: 1600px 999px;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #ff6f61;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d9534f;
+        }
+        #imageSelectionForm {
+            margin-top: 20px;
+        }
+        #videoResult {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+<form>
+
+
+<!//BARD>
+
+<input type="text" placeholder="Enter your location" id="input-bar">
+<button type="button" onclick="cd()">Copy</button>
+  <script>
+    function cd() {
+      var inputText = document.getElementById("input-bar").value;
+      var outputText = "Suggest topics for public awareness relevant to " + inputText;
+      navigator.clipboard.writeText(outputText);
+      alert("Text copied to clipboard. Proceed to discuss topics with AI");
+    }
+  </script><br>
+<button><a href="https://bard.google.com/" target="_blank">Suggest Topics</a></button> <br>
+Suggest topics related to your location<br><br><br>
+
+
+<!//CHATGPT>
+<input type="text" placeholder="Enter your topic" id="bar">
+<button type="button" onclick="copyToClipboard()">Copy</button>
+
+  <script>
+    function copyToClipboard() {
+      var inputText = document.getElementById("bar").value;
+      var outputText = "Suggest ideas for simple videos/animations/images related to to " + inputText;
+      navigator.clipboard.writeText(outputText);
+      alert("Text copied to clipboard. Proceed to discuss ideas with AI");
+    }
+  </script><br>
+<button><a href="https://chat.openai.com/" target="_blank">Brainstorm Ideas</a></button> <br>
+Discuss ideas related to your topic with AI<br><br><br>
+
+<!//DALL E>
+
+<button><a href="https://picsart.com/ai-video-generator/" target="_blank">Generate Video</a></button>
+<BR>
+or<br>
+<a href="https://labs.openai.com/" target="_blank">Generate Images</a> relevant to your chosen ideas
+<br><br><br>
+
+<!//google translate>
+<button><a href="https://translate.google.co.in/" target="_blank">Translate Text</a></button><br><br> 
+
+<!//video pe text dalo>
+
+<button><a href="https://www.veed.io/edit/aeb228ef-afa6-4f3c-bb50-7634944e005e?flow=%7B%22title%22%3A%22Add+Text+to+Video%22%2C%22steps%22%3A%5B%7B%22type%22%3A%22upload%22%2C%22config%22%3A%7B%22noVideo%22%3Afalse%2C%22noAudio%22%3Afalse%2C%22noImage%22%3Afalse%2C%22noTranscript%22%3Afalse%7D%7D%2C%7B%22type%22%3A%22navigation%22%2C%22config%22%3A%7B%22tabHref%22%3A%22%2Ftext%22%2C%22pingTestIds%22%3Anull%2C%22uploadMediaPath%22%3Anull%7D%7D%5D%7D" target="_blank">Add Text To Video</a></button>
+</body>
+</html>
